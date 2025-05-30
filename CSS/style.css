@@ -5,10 +5,10 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Kotta+One&family=Lemonada:wght@300..700&family=Mooli&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Birthstone&family=Kotta+One&family=Lemonada:wght@300..700&family=Mooli&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Signika:wght@300..700&family=Tagesschrift&display=swap');
 
 body {
-    font-family: "Lemonada", cursive;
+    font-family: "Mooli", sans-serif;
+    font-weight: 500;
     perspective: 700px;
     transform-style: preserve-3d;
 
@@ -441,12 +441,14 @@ nav {
             h1 {
                 margin: 20px 0px;
                 color: rgb(173, 10, 135);
+
             }
+
+
             .header {
-                font-size: 32px;
+                font-size: 52px;
                 font-family: "Birthstone", cursive;
-                font-weight: 400;
-                font-style: normal;
+                font-weight: 500;
             }
 
             .desc {
@@ -737,6 +739,7 @@ nav {
 /* end trending*/
 
 /* start customer*/
+
 .customer {
     background: url('../images/Untitled.png') no-repeat center/cover;
     margin-top: 130px;
@@ -806,9 +809,8 @@ nav {
 
 }
 
-/* end customer*/
+/* end trending*/
 
-/* start mayLike*/
 .mayLike {
     padding-top: 60px;
     width: 80%;
@@ -836,7 +838,7 @@ nav {
     }
 }
 
-.image {
+.images-mayLike .image {
     width: 300px;
     text-align: center;
 }
@@ -857,7 +859,7 @@ nav {
     display: block;
 }
 
-.image {
+.images-mayLike.image {
     position: relative;
     overflow: hidden;
 }
@@ -934,9 +936,8 @@ nav {
     }
 }
 
-/* end mayLike*/
 
-/* start news*/
+
 .news {
     border-bottom: 2px solid gray;
     background: -webkit-linear-gradient(top, #dabbe09a, #bed1e377);
@@ -979,16 +980,17 @@ nav {
 
                 img:hover {
                     transform: scale(1.07);
-                    overflow: hidden;
                 }
             }
 
             .text {
                 text-align: start;
                 margin-top: 20px;
+                position: relative;
+                z-index: 10;
 
                 .product {
-                    color: rgb(173, 10, 135);
+                    color: black;
                     font-size: 20px;
                 }
 
@@ -1004,7 +1006,7 @@ nav {
                 }
 
                 .learn {
-                    color: rgb(29, 29, 29);
+                    color: rgb(21, 20, 20);
                     font-size: 16px;
 
                 }
@@ -1024,13 +1026,15 @@ nav {
             }
         }
 
+        .image:hover .product {
+            color: rgb(173, 10, 135);
+            ;
+        }
+
 
     }
 }
 
-/* end news*/
-
-/* start features*/
 .features {
     width: 80%;
     margin: auto;
@@ -1091,10 +1095,6 @@ nav {
     }
 }
 
-/* end features*/
-
-
-/* start footer*/
 .footer {
     background-color: #242424;
     color: white;
@@ -1276,5 +1276,3 @@ nav {
         transform: scale(1.4);
     }
 }
-
-/* end footer*/
